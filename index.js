@@ -5,10 +5,11 @@ var facts = '0';
 var pictures = '0';
 
 const token = "";
-const PREFIX = '!';
+const PREFIX = 'f!';
 
 bot.on('ready', () => {
     console.log('This bot is online!');
+    bot.user.setActivity('Contemplating Ms. Piggy\'s thighs.\n Type \"f!help\" for commands.');
 });
 
 bot.on('message', msg => {
