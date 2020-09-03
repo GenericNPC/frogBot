@@ -1,8 +1,8 @@
 //frogBot
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-pictures = 0;
-facts = 0;
+var facts = '0';
+var pictures = '0';
 
 const token = "";
 const PREFIX = '!';
@@ -17,11 +17,14 @@ bot.on('message', msg => {
         case 'help':
             msg.reply('!frogme - Send a picture of a friendly frog!' +
                 '\n!frogfacts - Give me interesting 100% accurate frog trivia!' +
-                '\n!git - Give me a link to the source code for this bot.' + 
+                '\n!git - Give me a link to the source code for this bot.' +
                 '\n!help - Display this message');
             break;
+        case 'ping':
+            msg.reply('pong!');
+            break;
         case 'frogme':
-            pictures = math.floor((math.random * 12) + 1);
+            pictures = Math.trunc((Math.random() * 12) + 1);
             if (pictures == 1) {
                 msg.reply('https://cdn.mos.cms.futurecdn.net/NVzSPWPoNmm5LRZWWSwCkc-1200-80.jpg');
             }
@@ -60,7 +63,7 @@ bot.on('message', msg => {
             }
             break;
         case 'frogfacts':
-            facts = math.floor((math.random * 6) + 1);
+            facts = Math.trunc((Math.random() * 6) + 1);
             if (facts == 1) {
                 msg.reply("You may have heard of messenger pigeons, but have you heard of messenger frogs? Before the widespread adoption of electical messaging in swampland areas, frogs were used to help deliver messages due to their increased mobility in the water.");
             }
@@ -80,7 +83,9 @@ bot.on('message', msg => {
                 msg.reply("In Africa, frogs are a delicacy, noted particularly for their slimy texture. There are several recipes that involve using frog mucus as an ingredient. There are also countless records of children running to their parents excited for dinner after smelling boiling frogs.");
             }
             break;
-        }
+        case 'git':
+            msg.reply('https://github.com/GenericNPC/frogBot');
+            break;
     }
 });
 
