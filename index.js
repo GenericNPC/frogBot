@@ -3,6 +3,11 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 var facts = '0';
 var pictures = '0';
+var test1 = '0';
+var test2 = '0';
+var test3 = '0';
+var test4 = '0';
+loop = '0';
 
 const token = "";
 const PREFIX = 'f!';
@@ -30,7 +35,19 @@ bot.on('message', msg => {
                 msg.reply('pong!');
                 break;
             case 'frogme':
+                loop = 1;
+                test4 = test3;
+                test3 = test2;
+                test2 = test1;
                 pictures = Math.trunc((Math.random() * 12) + 1);
+                while (loop == 1){
+                    if (pictures == test1 || pictures == test2 || pictures == test3 || pictures == test4) {
+                        pictures = Math.trunc((Math.random() * 12) + 1);
+                    } else {
+                        loop = 0;
+                    }
+                } 
+                test1 = pictures;
                 if (pictures == 1) {
                     msg.channel.send('https://cdn.mos.cms.futurecdn.net/NVzSPWPoNmm5LRZWWSwCkc-1200-80.jpg');
                 }
@@ -69,7 +86,18 @@ bot.on('message', msg => {
                 }
                 break;
             case 'frogfacts':
+                test4 = test3;
+                test3 = test2;
+                test2 = test1;
                 facts = Math.trunc((Math.random() * 6) + 1);
+                while (loop == 1) {
+                    if (facts == test1 || facts == test2 || facts == test3 || facts == test4) {
+                        facts = Math.trunc((Math.random() * 6) + 1);
+                    } else {
+                        loop = 0;
+                    }
+                } 
+                test1 = facts;
                 if (facts == 1) {
                     msg.reply("You may have heard of messenger pigeons, but have you heard of messenger frogs? Before the widespread adoption of electical messaging in swampland areas, frogs were used to help deliver messages due to their increased mobility in the water.");
                 }
