@@ -10,17 +10,21 @@ const PREFIX = 'f!';
 bot.on('ready', () => {
     console.log('This bot is online!');
     bot.user.setActivity('Contemplating Ms. Piggy\'s thighs.\n Type \"f!help\" for commands.');
+    setInterval(() => {
+        bot.user.setActivity('Contemplating Ms. Piggy\'s thighs.\n Type \"f!help\" for commands.');
+    }, 5000000);
 });
 
 bot.on('message', msg => {
+    bot.user.setActivity('Contemplating Ms. Piggy\'s thighs.\n Type \"f!help\" for commands.');
     if (msg.content[0] == 'f' && msg.content[1] == '!') {
         let args = msg.content.substring(PREFIX.length).split(" ");
         switch (args[0]) {
             case 'help':
-                msg.reply('!frogme - Send a picture of a friendly frog!' +
-                    '\n!frogfacts - Give me interesting 100% accurate frog trivia!' +
-                    '\n!git - Give me a link to the source code for this bot.' +
-                    '\n!help - Display this message');
+                msg.reply('f!frogme - Send a picture of a friendly frog!' +
+                    '\nf!frogfacts - Give me interesting 100% accurate frog trivia!' +
+                    '\nf!git - Give me a link to the source code for this bot.' +
+                    '\nf!help - Display this message');
                 break;
             case 'ping':
                 msg.reply('pong!');
