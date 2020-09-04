@@ -32,40 +32,40 @@ bot.on('message', msg => {
             case 'frogme':
                 pictures = Math.trunc((Math.random() * 12) + 1);
                 if (pictures == 1) {
-                    msg.reply('https://cdn.mos.cms.futurecdn.net/NVzSPWPoNmm5LRZWWSwCkc-1200-80.jpg');
+                    msg.channel.send('https://cdn.mos.cms.futurecdn.net/NVzSPWPoNmm5LRZWWSwCkc-1200-80.jpg');
                 }
                 if (pictures == 2) {
-                    msg.reply('https://www.britannica.com/explore/savingearth/wp-content/uploads/sites/4/2019/04/0000202331-hero.jpg');
+                    msg.channel.send('https://www.britannica.com/explore/savingearth/wp-content/uploads/sites/4/2019/04/0000202331-hero.jpg');
                 }
                 if (pictures == 3) {
-                    msg.reply('https://cdn.mos.cms.futurecdn.net/rqoDpnCCrdpGFHM6qky3rS-650-80.jpg');
+                    msg.channel.send('https://cdn.mos.cms.futurecdn.net/rqoDpnCCrdpGFHM6qky3rS-650-80.jpg');
                 }
                 if (pictures == 4) {
-                    msg.reply('https://i.ytimg.com/vi/mIeRRuO09i4/maxresdefault.jpg');
+                    msg.channel.send('https://i.ytimg.com/vi/mIeRRuO09i4/maxresdefault.jpg');
                 }
                 if (pictures == 5) {
-                    msg.reply('https://media.australianmuseum.net.au/media/dd/images/Rhinella_marina_Border_Ranges_NP.width-1600.a2aaf34.jpg');
+                    msg.channel.send('https://media.australianmuseum.net.au/media/dd/images/Rhinella_marina_Border_Ranges_NP.width-1600.a2aaf34.jpg');
                 }
                 if (pictures == 6) {
-                    msg.reply('https://image-cdn.neatoshop.com/styleimg/16331/none/lightturquoise/default/266978-20;1588125395u.jpg');
+                    msg.channel.send('https://image-cdn.neatoshop.com/styleimg/16331/none/lightturquoise/default/266978-20;1588125395u.jpg');
                 }
                 if (pictures == 7) {
-                    msg.reply('https://images-na.ssl-images-amazon.com/images/I/81lMlg0YzbL._AC_SX522_.jpg');
+                    msg.channel.send('https://images-na.ssl-images-amazon.com/images/I/81lMlg0YzbL._AC_SX522_.jpg');
                 }
                 if (pictures == 8) {
-                    msg.reply('https://fiverr-res.cloudinary.com/videos/t_main1,q_auto,f_auto/z915hnpkaejejeviudrm/do-a-kermit-the-frog-impression.png');
+                    msg.channel.send('https://fiverr-res.cloudinary.com/videos/t_main1,q_auto,f_auto/z915hnpkaejejeviudrm/do-a-kermit-the-frog-impression.png');
                 }
                 if (pictures == 9) {
-                    msg.reply('https://media.australianmuseum.net.au/media/dd/images/Some_image.width-1200.bf0579f.jpg');
+                    msg.channel.send('https://media.australianmuseum.net.au/media/dd/images/Some_image.width-1200.bf0579f.jpg');
                 }
                 if (pictures == 10) {
-                    msg.reply('https://cdn.mos.cms.futurecdn.net/vKA7hjskQQPzCeJ99mKjNX-1200-80.jpg');
+                    msg.channel.send('https://cdn.mos.cms.futurecdn.net/vKA7hjskQQPzCeJ99mKjNX-1200-80.jpg');
                 }
                 if (pictures == 11) {
-                    msg.reply('https://static.turbosquid.com/Preview/2014/05/13__03_39_13/tfrog_render00_1.jpg794aadb9-a318-4117-96eb-f22fce887c10Original.jpg');
+                    msg.channel.send('https://static.turbosquid.com/Preview/2014/05/13__03_39_13/tfrog_render00_1.jpg794aadb9-a318-4117-96eb-f22fce887c10Original.jpg');
                 }
                 if (pictures == 12) {
-                    msg.reply('https://images-ext-2.discordapp.net/external/AbjQybax4QzYxiFcnbfrVvxSCCHgO7psIGgWDKBXdpQ/https/pbs.twimg.com/media/EZvCzW_XgAEQWyy.png%3Alarge?width=389&height=467');
+                    msg.channel.send('https://images-ext-2.discordapp.net/external/AbjQybax4QzYxiFcnbfrVvxSCCHgO7psIGgWDKBXdpQ/https/pbs.twimg.com/media/EZvCzW_XgAEQWyy.png%3Alarge?width=389&height=467');
                 }
                 break;
             case 'frogfacts':
