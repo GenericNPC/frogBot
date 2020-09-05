@@ -39,10 +39,10 @@ bot.on('message', msg => {
                 test4 = test3;
                 test3 = test2;
                 test2 = test1;
-                pictures = Math.trunc((Math.random() * 12) + 1);
+                pictures = Math.trunc((Math.random() * 13) + 1);
                 while (loop == 1){
                     if (pictures == test1 || pictures == test2 || pictures == test3 || pictures == test4) {
-                        pictures = Math.trunc((Math.random() * 12) + 1);
+                        pictures = Math.trunc((Math.random() * 13) + 1);
                     } else {
                         loop = 0;
                     }
@@ -83,6 +83,9 @@ bot.on('message', msg => {
                 }
                 if (pictures == 12) {
                     msg.channel.send('https://images-ext-2.discordapp.net/external/AbjQybax4QzYxiFcnbfrVvxSCCHgO7psIGgWDKBXdpQ/https/pbs.twimg.com/media/EZvCzW_XgAEQWyy.png%3Alarge?width=389&height=467');
+                }
+                if (pictures == 13) {
+                    msg.channel.send('https://tenor.com/view/spin-kermit-the-frog-funny-feels-like-pool-gif-15324912');
                 }
                 break;
             case 'frogfacts':
