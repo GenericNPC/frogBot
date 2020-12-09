@@ -3,10 +3,10 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 var facts = '0';
 var pictures = '0';
-var test1 = '0';
-var test2 = '0';
-var test3 = '0';
-var test4 = '0';
+var test1 = '1';
+var test2 = '2';
+var test3 = '3';
+var test4 = '4';
 loop = '0';
 
 const token = "";
@@ -18,6 +18,7 @@ bot.on('ready', () => {
     setInterval(() => {
         bot.user.setActivity('Contemplating Ms. Piggy\'s thighs.\n Type \"f!help\" for commands.');
     }, 5000000);
+
 });
 
 bot.on('message', msg => {
@@ -26,7 +27,7 @@ bot.on('message', msg => {
         let args = msg.content.substring(PREFIX.length).split(" ");
         switch (args[0]) {
             case 'help':
-                msg.reply('f!frogme - Send a picture of a friendly frog!' +
+                msg.reply('\nf!frogme - Send a picture of a friendly frog!' +
                     '\nf!frogfacts - Give me interesting 100% accurate frog trivia!' +
                     '\nf!git - Give me a link to the source code for this bot.' +
                     '\nf!help - Display this message');
